@@ -44,7 +44,7 @@ public class Main {
         for(Character c: str.toCharArray()){
             specialSymbols.add(c);
         }
-        for(Character c: str.toCharArray()){
+        for(Character c: password.toCharArray()){
             String key = "lowerCaseLetter";
             if(lowerCaseLetter.contains(c)){
                 if (count.containsKey(key)){
@@ -81,11 +81,11 @@ public class Main {
         for (Entry<String, Integer> entry: count.entrySet()){
             System.out.println(entry.getKey()+": " + entry.getValue());
         }
-        if (count.size() < 2){
-            System.out.print("Bad Password valid password");
+        if (count.size() < 3){
+            System.out.print("Bad Password! :C");
 
         }else{
-            System.out.print("good password!");
+            System.out.print("good password! :)");
         }
     }  
 }   
